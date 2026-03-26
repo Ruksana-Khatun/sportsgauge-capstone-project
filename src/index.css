@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Sansation', sans-serif;
+  
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  background: #000000;
+}
+
+#root {
+  width: 100%;
+  padding: 1.7rem;
+}
+
+.social-login .social-button {
+  display: flex;
+  gap: .81rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: .75rem ;
+  border-radius: 5rem;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 15px solid #000000;
+  transition: 0.3s ease;
+}
+
+.social-login .social-button:hover {
+  color: #31b123;
+  background: #fcf8f8;
+}
+
+.social-login .social-button .social-icon {
+  width: 23px;
+}
+
+.login-form .input-wrapper  {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  border-radius: 3rem;
+  margin-bottom: 2.5rem;
+  
+}
+
+.login-form .input-field {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 1.06rem;
+  background: #31311d;
+  border-radius: 5rem;
+  border: 1px solid #fffc39;
+  padding: 0px 1.25rem 0 3.12rem;
+  transition: 0.2s ease;
+}
+
+.login-form .forgot-password-link {
+  display: block;
+  width:fit-content;
+  margin-top: -0.44rem;
+}
+
+
+.login-form .login-button:hover {
+  background: #1281b4;
+}
+
+.login-form .login-button 
+{
+  display:block;
+  margin: 0 auto;
+  width: 60%;
+  height: 54px;
+  color: #000000;
+  font-size: 1.125rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 2.19rem;
+  border-radius: 5rem;
+  background: #95fc41;
+  transition: 0.3s ease;
+
+}
+
+.login-form .material-symbols-rounded {
+  position: absolute;
+  left: 0.90rem;
+  top: 85%;
+  transform: translateY(-50%);
+  color: #bcb8cb;
+}
+
+
+.form-title {
+  
+  font-size: 2rem;
+  font-weight: 1000;
+  margin-bottom: .5rem;
+  color:#e4e433
+}
+
+.form-subtitle {
+  font-size: 1.1rem;
+  font-weight: 3;
+  color:#e4e433 ;
+  margin-bottom: 3rem;
+}
+
+.input-wrapper{
+  color:#a35d1f;
+  margin-bottom: 1.5rem;
+}
+
+.sperator {
+  display: block;
+  align-items: center;
+  width:100%;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #e6b26a;
+}
+
+.sperator::before,
+.sperator::after {
+  content: '';
+  display: inline-block;
+  width: 40%;
+  height: 1px;
+  background: #f8ff76;
+  margin: 0 10px;
+  vertical-align: middle;
+}
