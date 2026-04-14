@@ -5,7 +5,17 @@ const supabase = require('../config/supabase');
 // ✅ PLAYER REGISTER
 const registerPlayer = async (req, res) => {
   try {
-    const { name, email, password, phone, aadhar_number } = req.body;
+    const { 
+      name, 
+      email, 
+      password, 
+      phone, 
+      aadhar_number,
+      date_of_birth,
+      gender,
+      state,
+      city
+    } = req.body;
 
     if (!name || !email || !password || !phone || !aadhar_number) {
       return res.status(400).json({
@@ -49,7 +59,12 @@ const registerPlayer = async (req, res) => {
         email,
         password: hashedPassword,
         phone,
-        aadhar_number
+        aadhar_number,
+        date_of_birth: date_of_birth || null,
+        gender: gender || null,
+        state: state || null,
+        city: city || null,
+        profile_complete: false
       }])
       .select()
       .single();
@@ -210,5 +225,6 @@ const loginAdmin = async (req, res) => {
     });
   }
 };
+
 
 module.exports = { registerPlayer, loginPlayer, loginAdmin };
