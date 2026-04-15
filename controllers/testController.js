@@ -1,6 +1,6 @@
 const supabase = require('../config/supabase');
 
-// ✅ GET ALL TESTS
+
 const getAllTests = async (req, res) => {
   try {
     const { data: tests, error } = await supabase
@@ -32,7 +32,7 @@ const getAllTests = async (req, res) => {
   }
 };
 
-// ✅ GET SINGLE TEST
+
 const getTestById = async (req, res) => {
   try {
     const { id } = req.params;
@@ -65,7 +65,7 @@ const getTestById = async (req, res) => {
   }
 };
 
-// ✅ CREATE TEST (Admin Only)
+
 const createTest = async (req, res) => {
   try {
     const { name, description, category, deadline } = req.body;
@@ -106,7 +106,7 @@ const createTest = async (req, res) => {
   }
 };
 
-// ✅ UPDATE TEST (Admin Only)
+
 const updateTest = async (req, res) => {
   try {
     const { id } = req.params;
@@ -142,7 +142,7 @@ const updateTest = async (req, res) => {
   }
 };
 
-// ✅ DELETE TEST (Admin Only)
+
 const deleteTest = async (req, res) => {
   try {
     const { id } = req.params;

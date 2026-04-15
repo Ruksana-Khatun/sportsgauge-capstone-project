@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const supabase = require('../config/supabase');
 
-// ✅ PLAYER REGISTER
+
 const registerPlayer = async (req, res) => {
   try {
     const { 
@@ -104,7 +104,7 @@ const registerPlayer = async (req, res) => {
   }
 };
 
-// ✅ PLAYER LOGIN
+
 const loginPlayer = async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -166,7 +166,7 @@ const loginPlayer = async (req, res) => {
   }
 };
 
-// ✅ ADMIN LOGIN
+
 const loginAdmin = async (req, res) => {
   try {
     const { email, password } = req.body;
