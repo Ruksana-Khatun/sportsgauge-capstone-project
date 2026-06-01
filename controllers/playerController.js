@@ -44,8 +44,7 @@ const updateProfile = async (req, res) => {
       date_of_birth,
       gender,
       state,
-      city,
-      sport_type
+      city
     } = req.body;
 
 
@@ -56,7 +55,6 @@ const updateProfile = async (req, res) => {
     if (gender)        updateData.gender = gender;
     if (state)         updateData.state = state;
     if (city)          updateData.city = city;
-    if (sport_type)    updateData.sport_type = sport_type;
 
 
     if (Object.keys(updateData).length === 0) {

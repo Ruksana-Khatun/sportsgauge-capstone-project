@@ -22,3 +22,19 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment credentials
+.env
+.env*.local
+
+# Frontend specific dependencies & builds
+frontend/node_modules/
+frontend/dist/
+
+# Python virtual environments, cache, and result CSVs
+**/__pycache__/
+**/.venv/
+**/venv/
+ai_services/*.csv
+*.csv
+
